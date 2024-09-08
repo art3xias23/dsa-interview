@@ -37,3 +37,30 @@ Singleton instance = Singleton.getInstance(); // Same instance every time.
 
     \end{lstlisting}
 \end{itemize}
+
+\section{Differences}
+\begin{itemize}
+	\item Instantiation
+	\begin{itemize}
+		\item Static: No instantiation required. Fields and methods belong to the class, not the instance.
+		\item Singleton: Only one instance is allowed. Instantiation happens when you call for it.			
+	\end{itemize}
+	
+	\item State
+	\begin{itemize}
+		\item Static: As methods and fields belong to the class and not the instance. No control over instantiation.
+		\item Singleton: More control over initialization			
+	\end{itemize}
+	
+	\item Memory Lifetime
+	\begin{itemize}
+		\item Static: Lives until the end of the application
+		\item Singleton: Can be explicitly destroyed. More control over the lifetime.		
+	\end{itemize}
+	
+	\item Constructors
+	\begin{itemize}
+		\item Static: Does not have parameters, cannot control when it's called as its only called when the class is first accessed.
+		\item Singleton: Private constructor to prevent external call, Lazily called as constructor is called when the singleton is first instantiated. The constructor is called only once.	
+	\end{itemize}
+\end{itemize}
