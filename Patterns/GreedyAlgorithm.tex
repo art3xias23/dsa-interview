@@ -1,0 +1,36 @@
+\chapter{Greedy Algorithm}
+
+\section{Description}
+A greedy algorithm makes an optimal choice at each step in the process, which then becomes the overall optimal choice.
+
+\section{When to use}
+A greedy algo can be implemented when some properties are in place
+\begin{itemize}
+\item Greedy Choice Property
+	A global(overall) optimal solution can be reached by choosing the optimal choice at each step.
+\end{itemize}
+
+\section{Questions}
+
+\href{https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/}{121. Best Time to Buy and Sell Stock}
+ 
+
+ 
+\section{Example}
+
+\begin{lstlisting}
+ public int MaxProfit(int[] prices) {
+var min = int.MaxValue;
+var profit = 0;
+
+    for(int i=0; i< prices.Length; i++){
+        var currentProfit = prices[i] - min;
+        profit = currentProfit > profit ? currentProfit: profit;
+
+        min = min > prices[i] ? prices[i] : min;
+    }
+    return profit;
+}
+\end{lstlisting}
+
+
