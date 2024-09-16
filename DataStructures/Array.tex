@@ -1,0 +1,48 @@
+\chapter{Array}
+
+\section{Definition}
+\begin{itemize}
+	\item Arrays hold values of the same type of data at contiguous memory locations.
+\end{itemize}
+
+\section{Advantages}
+\begin{itemize}
+	\item Store multiple elements of the same type in one variable name.
+	\item Accessing elements is fast if the index is known.
+\end{itemize}
+
+\section{Disadvantages}
+\begin{itemize}
+	\item Removing/Adding from the middle or start of the array is slow because other elements need to be moved around.
+\end{itemize}
+
+\section{Corner Cases}
+\begin{itemize}
+	\item Empty Sequence
+	\item Sequence with 1 or 2 elements
+	\item Sequence with repeated elements
+	\item Duplicated values in the sequence
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Operation & Complexity\\ [0.5ex] 
+ \hline\hline
+ Access & O(1) \\ 
+ \hline
+ Search & O(n) \\
+ \hline
+ Seach(sorted) & \[O(\log(n))\] \\
+ \hline
+ Insert & O(n) \\
+ \hline
+ Insert(at end) & O(1)\\ [1ex] 
+ \hline
+ Remove & O(n) \\ [1ex] 
+ \hline
+ Remove(at end) & O(1) \\ [1ex] 
+ \hline
+
+\end{tabular}
+\end{center}

@@ -1,0 +1,21 @@
+\chapter{Hashmaps / Hashtables}
+
+\section{Basics}
+	\begin{itemize}
+		\item Hashmaps (also referred to as Hashtables) implement an associative array data type. A structure which maps keys to values.
+		\item A hashmap uses a hashfunction to convert a key into an integer (hashcode).
+		\item The resulting hash indicates where the value is stored.
+		\item Instead of linearly searcing an array everytime to determine if an element is present, which takes O(n) time, we can traverse the array once and hash all the elements into a hashmap. Determining if the element exists in the hashmap is a simpme matter of hashing the element and seeing if it exists which is O(1) on average.
+	\end{itemize}
+	
+	\section{Collision Resolution techniques}
+	\begin{itemize}
+		\item It's unlikely that these will be needed.
+			\begin{itemize}
+				\item Separate chaining - A linked list will be used for each entry in a bucket so that it stores all the collided entries.
+				\item Open addressing
+			\end{itemize}
+	\end{itemize}
+	
+	\section{Time complexity}
+	
