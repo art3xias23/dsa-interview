@@ -1,7 +1,7 @@
 \documentclass{book}
 \include{packages}
 \title{.NET Interview Questions}
-\author{Konstantin Milchev}
+\author{Konstantin Milchev }
 \date{}
 
 % Globally center all chapter titles
@@ -18,7 +18,7 @@
 \fancyfoot[C]{\thepage} % Set page number at the bottom center by default
 \renewcommand{\headrulewidth}{0pt} % Remove the header line
 \setlength{\headheight}{0pt}       % Remove the height of the header
-
+ 
 \begin{document}
 
 % Title Page
@@ -30,21 +30,13 @@
 % Table of Contents
 \tableofcontents
 
-\chapter*{Register}
-% Create hyperlinks to other sections/chapters
-% Using \hyperlink{name}{text} where name is the label to jump to
-
-\begin{itemize}
-    \item \hyperlink{page1}{Page 1: HTTP Headers}
-    \item \hyperlink{page2}{Page 2: Title of the Second Page}
-    \item \hyperlink{page3}{Page 3: Title of the Third Page}
-\end{itemize}
-
 % Start of the pages
-
+ 
 \newpage
 % Include other files here
-\include{General/DependencyInjection}
+\include{Patterns/Outline}
+\include{DataStructures/Outline}
+	
 
 
 \end{document}
