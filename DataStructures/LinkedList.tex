@@ -1,0 +1,74 @@
+\chapter{Array}
+
+\section{Definition}
+\begin{itemize}
+	\item Like arrays it's used to represent sequential data.
+	\item Each element contains an address of the next element.
+	\item A collection of nodes where each node contains data and a reference to the next node in the sequence.
+\end{itemize}
+
+\section{Advantages}
+\begin{itemize}
+	\item Deletion and Insertion of a node given it's location is constant O(1), where in arrays the items would have to be shifted.
+\end{itemize}
+
+\section{Disadvantages}
+\begin{itemize}
+	\item Accessing a node is linear time O(n).
+	\item Accessing can only occur by traversing from the head. Access by index (as with arrays) not possible.
+\end{itemize}
+
+\section{Types}
+\begin{itemize}
+	\item Singly Linked List
+			\begin{itemize}
+				\item Each node points to the next node and the last node points to null.
+			\end{itemize}
+	\item Doubly Linked List
+			\begin{itemize}
+				\item Each node has two pointers. Next and Prev.
+				\item The first node's Prev and the last node's Next pointers point to null.
+			\end{itemize}
+\end{itemize}
+
+\section{Corner Cases}
+\begin{itemize}
+	\item Empty Sequence
+	\item Sequence with 1 or 2 elements
+	\item Sequence with repeated elements
+	\item Duplicated values in the sequence
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{||c c c||} 
+ \hline
+ Operation & Complexity & Note\\ [0.5ex] 
+ \hline\hline
+ Access & O(n) \\ 
+ \hline
+ Search & O(n) \\
+ \hline
+ Insert & O(1) & Assumes you have traversed to the insertion position \\ 
+ \hline
+ Remove & O(1) & Assumes you have traversed to the node to be removed \\
+ \hline
+
+\end{tabular}
+\end{center}
+
+\section{Common Routines to Remember}
+\begin{itemize}
+	\item Counting the number of nodes in the linked list
+	\item Reversing a linked list in-place
+	\item Finding the middle node of the linked list using two pointers (fast/slow)
+	\item Duplicated values in the sequence
+\end{itemize}
+
+
+\section{Corner Cases}
+\begin{itemize}
+	\item Empty linked list (head is null)
+	\item Single node
+	\item Two nodes
+	\item Linked list has cycles. Tip: Clarify beforehand with the interviewer whether there can be a cycle in the list. Usually the answer is no and you don't have to handle it in the code
+\end{itemize}
