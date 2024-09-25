@@ -1,0 +1,56 @@
+\chapter{Heap}
+\section Definition
+	A heap is a \textbf{binary} tree with two properties:
+	\begin{itemize}
+		\item Shape: Its shape must be complete. All of the nodes from all the levels must be filled, except the last one.
+		\item Order: It must have all of its nodes in a specific order.
+		\begin{itemize}
+			\item \textbf{Min-Heap}: A heap's root node must have of its children be either smaller than or equal to it's children.
+			\item \textbf{Max-Heap}: A heap's root node must have of its children be either greater than or equal to it's children.
+		\end{itemize}
+	\end{itemize}
+\section{Basics}
+	\begin{itemize}
+		\item We can always have duplicates in a heap
+		\item Heaps don't follow the binary search tree rule that the left node needs to be smaller than the right.
+		\item No matter if we grow or shrink the heap, we must always maintain it's two properties
+	\end{itemize}
+	
+	\begin{figure}
+		\centering
+		\scalebox{0.40}
+			{\includegraphics{images/heap_1}}
+		\caption{Heap as an array structure}
+	\end{figure}	
+
+	\section{Corner Cases}
+		\begin{itemize}
+			\item Empty stack. Popping from an empty stack
+			\item Stack with one item
+			\item Stack with two items
+		\end{itemize}
+		
+	
+	\section{Time complexity}
+	
+	\begin{center}
+		\begin{tabular}{||c c||}
+		\hline
+		Operation & Complexity\\
+		\hline\hline
+		Top/Peek & O(1)\\
+		\hline
+		Push & O(1)\\
+		\hline
+		Pop & O(1)\\
+		\hline
+		isEmpty & O(1)\\
+		\hline
+		Search & O(n)\\
+		\hline
+			
+		\end{tabular}
+	\end{center}
+	
+	
+	
