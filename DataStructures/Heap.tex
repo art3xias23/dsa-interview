@@ -14,6 +14,7 @@
 		\item We can always have duplicates in a heap
 		\item Heaps don't follow the binary search tree rule that the left node needs to be smaller than the right.
 		\item No matter if we grow or shrink the heap, we must always maintain it's two properties
+		\item It's used in a system scheduler where a priority queue will say which task should be executed next (task, item with highest priority will be dequeued from the heap)
 	\end{itemize}
 	\section{Storing a Heap}
 	\begin{figure}[H]
@@ -30,6 +31,13 @@
 			{\includegraphics{images/heap_2}}
 		\caption{Heap as an array structure}
 	\end{figure}	
+	
+	\section{Heap Sort Algorithm}
+		\begin{itemize}
+			\item Improved Selection Sort with O(nlogn) time complexity
+			\item buildMaxHeap()
+			\item heapify()
+		\end{itemize}
 
 	\section{Corner Cases}
 		\begin{itemize}
