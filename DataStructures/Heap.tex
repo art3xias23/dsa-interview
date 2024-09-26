@@ -1,5 +1,5 @@
 \chapter{Heap}
-\section Definition
+\section{Definition}
 	A heap is a \textbf{binary} tree with two properties:
 	\begin{itemize}
 		\item Shape: Its shape must be complete. All of the nodes from all the levels must be filled, except the last one.
@@ -15,11 +15,19 @@
 		\item Heaps don't follow the binary search tree rule that the left node needs to be smaller than the right.
 		\item No matter if we grow or shrink the heap, we must always maintain it's two properties
 	\end{itemize}
-	
-	\begin{figure}
+	\section{Storing a Heap}
+	\begin{figure}[H]
 		\centering
 		\scalebox{0.40}
 			{\includegraphics{images/heap_1}}
+		\caption{Heap as an array structure}
+	\end{figure}	
+	
+	\section{Getting the heap out of the Array}
+	\begin{figure}[H]
+		\centering
+		\scalebox{0.40}
+			{\includegraphics{images/heap_2}}
 		\caption{Heap as an array structure}
 	\end{figure}	
 
