@@ -1,0 +1,37 @@
+\chapter{Recursion}
+\section{Definition}
+Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.
+\section{Basics}
+	\begin{itemize}
+		\item Steps of a recursive function
+			\begin{itemize}
+			\item Base Case (i.e. when to stop)
+			\item Work toward Base Case
+			\item Recursive Call
+			\end{itemize}
+		\begin{lstlisting}
+def fib(n):
+	if n <= 1:
+    return n
+  return fib(n - 1) + fib(n - 2)
+	\end{lstlisting}
+	\end{itemize}
+	
+	\section{Corner Cases}
+\begin{itemize}
+	\item n = 0
+	\item n = 1
+\end{itemize}
+
+		
+		\section{Techniques}
+		\begin{itemize}
+			\item \textbf{Memoization}
+			Memoization is an optimization technique which stores the results of expensive function calls and reuses them when the same inputs occur again.
+		\begin{itemize}
+			\item If you see a top or lowest k being mentioned in the question, it is usually a signal that a heap can be used to solve the problem, such as in \textbf{Top K Frequent Elements.}
+			\item Stack with one item
+			\item Stack with two items
+		\end{itemize}
+		\end{itemize}
+
