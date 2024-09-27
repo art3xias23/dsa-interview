@@ -39,9 +39,10 @@
 			\item heapify()
 		\end{itemize}
 
-	\section{Corner Cases}
+		
+		\section{Techniques}
 		\begin{itemize}
-			\item Empty stack. Popping from an empty stack
+			\item If you see a top or lowest k being mentioned in the question, it is usually a signal that a heap can be used to solve the problem, such as in \textbf{Top K Frequent Elements.}
 			\item Stack with one item
 			\item Stack with two items
 		\end{itemize}
@@ -54,15 +55,13 @@
 		\hline
 		Operation & Complexity\\
 		\hline\hline
-		Top/Peek & O(1)\\
+		Find max/min & O(1)\\
 		\hline
-		Push & O(1)\\
+		Insert & O(log(n))\\
 		\hline
-		Pop & O(1)\\
+		Remove & O(log(n))\\
 		\hline
-		isEmpty & O(1)\\
-		\hline
-		Search & O(n)\\
+		Heapify(create a heap of a given array of elements) & O(1)\\
 		\hline
 			
 		\end{tabular}
