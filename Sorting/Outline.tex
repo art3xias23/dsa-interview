@@ -1,0 +1,46 @@
+\chapter{Sorting Algorithms}
+
+\section{Classification}
+\begin{enumerate}
+	\item{Time Complexity} \newline
+		How long does it take for the algo to sort relative to it's size(number of elements)
+	\item{Space Complexity / Memory usage} \newline
+		The amount of extra space that an algo needs in order to complete it's sort
+	\item{Stability} \break
+		When duplicate numbers are found will they remain in the same relative order?
+		\newline
+		[17, 4, 12, 3, \textcolor{Red}{4}, 15]
+		\newline
+		[3, 4, \textcolor{Red}{4}, 12, 15, 17]  \leftarrow Stable
+		\newline
+		[3, \textcolor{Red}{4}, 4, 12, 15, 17]  \leftarrow UnStable
+		\newline
+	\item{Internal vs External}
+	\item{Recursive vs Non-Recursive}
+	\item{Comparison vs Non-Comparison}
+\end{enumerate}
+
+\section{Sorting Algos}
+\begin{center}
+	\begin{tabular}{|| c c c c c||}
+	\hline
+	Algo & Stable? & Inplace? & Time & Space\\
+	\hline \hline
+	Selection & No & Yes & N^{2} & 1\\
+	\hline
+	Insertion & Yes & Yes & between N and N^{2} & 1 \\
+	\hline
+	Shellsort & No & Yes & N^{6/5} & 1 \\
+	\hline
+	Quicksort & No & Yes & N\log{N} & \log{N} \\
+	\hline
+	3-way quicksort & No & Yes & between N and N\log{N} & N\log{N} \\
+	\hline
+	MergeSort & Yes & No & N\log{N} & N \\
+	\hline
+	Heapsort & No & Yes & N\log{N} & 1 \\
+	\hline
+	\end{tabular}
+\end{center}
+
+
